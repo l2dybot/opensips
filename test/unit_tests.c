@@ -39,6 +39,8 @@ void init_unit_tests(void)
 		set_mpath("modules/");
 		solve_module_dependencies(modules);
 		//init_cachedb_tests();
+	} else {
+		ensure_global_context();
 	}
 }
 
